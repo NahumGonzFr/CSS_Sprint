@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="buttons-top">
+    <button (click)="mostrarGrafica('calorias')">Seguimiento de calorías</button>
+    <button (click)="mostrarGrafica('porciones')">Seguimiento de porciones</button>
+    <button (click)="mostrarGrafica('peso')">Seguimiento de peso</button>
+  </div>
+
+  <div class="chart">
+    <app-dona-grafica [data]="graficaActual"></app-dona-grafica>
+  </div>
+
+  <div class="buttons-bottom">
+    <button (click)="cambiarPeriodo('semanal')">Semanal</button>
+    <button (click)="cambiarPeriodo('mensual')">Mensual</button>
+  </div>
+</div>
